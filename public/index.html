@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soumia Ablam — Desarrolladora Web Junior</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="card">
+    <header class="header">
+      <div class="photo-container" id="photoContainer">
+        <!-- Tu foto se muestra aquí. Reemplaza public/foto.jpg con tu imagen. -->
+        <img src="/foto.jpg" alt="Foto de Soumia Ablam" id="profilePhoto">
+      </div>
+      <h1 class="name">Soumia Ablam</h1>
+      <p class="title">Desarrolladora Web Junior</p>
+    </header>
+
+    <main class="body">
+      <section class="section">
+        <h2>Sobre mí</h2>
+        <p>Desarrolladora web junior apasionada por crear páginas modernas y funcionales. En continuo aprendizaje y con muchas ganas de crecer profesionalmente.</p>
+      </section>
+
+      <section class="section">
+        <h2>Habilidades</h2>
+        <div class="skills">
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">TypeScript</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">Responsive Design</span>
+          <span class="skill">Git</span>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Foto de perfil</h2>
+        <label class="upload-zone" for="photoInput">
+          📸 Haz clic para subir tu foto del currículum
+          <input type="file" id="photoInput" accept="image/*">
+        </label>
+      </section>
+
+      <div class="links">
+        <a href="#" id="linkedinLink" onclick="return false">LinkedIn</a>
+        <a href="#" id="githubLink" onclick="return false">GitHub</a>
+      </div>
+    </main>
+
+    <footer>© 2026 Soumia Ablam</footer>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>

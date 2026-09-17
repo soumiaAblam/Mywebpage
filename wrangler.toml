@@ -1,0 +1,6 @@
+name = "mywebpage"
+main = "src/index.ts"
+compatibility_date = "2026-09-17"
+
+# Carpeta con los archivos estáticos (HTML, CSS, foto)
+assets = { directory = "./public", binding = "ASSETS" }
