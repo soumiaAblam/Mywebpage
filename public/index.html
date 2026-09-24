@@ -1,57 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Soumia Ablam — Desarrolladora Web Junior</title>
-  <link rel="stylesheet" href="/styles.css">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Soumia Abdelaati Lamrahi, desarrolladora de aplicaciones web.">
+  <title>Soumia Abdelaati | Desarrolladora Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="/styles.css">
+  <style>.header-tools{display:flex;align-items:center;gap:12px}.language-select select{appearance:none;background:transparent;border:0;border-bottom:1px solid rgba(7,59,90,.18);padding:7px 17px 7px 2px;color:#073B5A;font:700 11px 'DM Mono';cursor:pointer}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.admin-trigger{position:static!important;width:auto!important;height:auto!important;padding:4px 0!important;background:transparent!important;border:0!important;color:#3A5E7B!important;font:700 10px Manrope!important;cursor:pointer!important;text-decoration:underline;text-underline-offset:3px}.project-description{font-size:11px;line-height:1.55;color:#3A5E7B;margin:0 0 12px}.contact-detail{display:inline-flex;gap:5px;align-items:center;margin-left:14px}.contact-detail b{font-size:9px;text-transform:uppercase}.contact-detail button{border:0;background:transparent;color:#A61B3A;font:700 9px Manrope;cursor:pointer;padding:0}.resume-language{min-height:24px;min-width:24px;display:grid;place-items:center;border-radius:50%}</style>
+  <style>.resume-project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.resume-visual{background:#A3C2D3;display:grid;place-items:center;background-size:cover;background-position:center}.resume-visual span{font:500 30px 'DM Mono';color:#073B5A;background:#FFF8E8cc;padding:8px}.resume-view{border:0;background:transparent;padding:0;color:#073B5A;font:700 11px Manrope;cursor:pointer}.resume-view span{color:#A61B3A;font-size:16px}.resume-view:disabled{color:#3A5E7B;cursor:not-allowed}.resume-viewer{width:min(900px,calc(100% - 30px));height:min(85vh,900px);border:0;padding:35px 12px 12px;background:#FFF8E8}.resume-viewer::backdrop{background:#063555cc}.resume-viewer iframe{border:0;width:100%;height:100%;background:#fff}@media(max-width:600px){.resume-project-grid{grid-template-columns:1fr}}</style>
+  <style>.resume-section{display:block}.resume-section .side-heading{margin-bottom:52px}.resume-section .side-heading p:last-child{max-width:500px}.resume-project-grid{grid-template-columns:repeat(4,minmax(0,1fr));max-width:none;gap:14px}.resume-project-grid .project-card{padding:12px}.resume-project-grid .project-visual{height:145px}.resume-project-grid .project-info{padding-top:14px}.resume-project-grid .project-info h3{font-size:14px}.resume-project-grid .project-description{font-size:10px}.resume-visual span{display:none}@media(max-width:850px){.resume-project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:520px){.resume-project-grid{grid-template-columns:1fr}}</style>
+  <style>.contact-bar{max-width:1280px;margin:0 auto;max-height:0;opacity:0;overflow:hidden;background:#fff;transition:max-height .35s ease,opacity .25s ease,padding .35s ease}.contact-bar.is-open{max-height:170px;opacity:1;padding:24px 44px}.contact-bar .contact-detail{margin:0 20px 8px 0}.contact-bar a{font-size:11px}@media(max-width:600px){.contact-bar.is-open{padding:20px}.contact-bar .contact-detail{display:flex;margin-bottom:12px}}</style>
+  <style>body{background:#FFFFFF}</style>
+  <style>textarea{display:block;width:100%;border:1px solid rgba(7,59,90,.18);padding:12px;margin-top:7px;background:#fff;color:#073B5A;font:14px Manrope;resize:vertical}</style>
+  <style>.admin-image-preview{display:block;width:96px;height:62px;object-fit:cover;margin-top:8px;border:1px solid #A3C2D3}.admin-file-status{display:block;color:#3A5E7B;font-size:10px;margin-top:6px}</style>
+  <style>.resume-viewer-pages{height:100%;overflow:auto;padding:4px;background:#3a5e7b}.resume-viewer-pages canvas{display:block;width:min(100%,850px);height:auto;margin:0 auto 14px;background:#fff;box-shadow:0 2px 10px #0004}.viewer-loading{color:#fff;text-align:center;padding:40px;font:14px Manrope}</style>
+  <style>.contact-bar .contact-separator{color:#A3C2D3;margin:0 12px}.contact-bar .contact-detail button{display:inline-flex;align-items:center;border:1px solid #A61B3A;background:#fff;color:#A61B3A;border-radius:2px;padding:5px 9px;font:700 10px Manrope;cursor:pointer}.contact-bar .contact-detail button:hover{background:#A61B3A;color:#fff}@media(max-width:600px){.contact-bar .contact-separator{display:none}}</style>
+  <style>.tech-groups{margin-top:55px;border-top:1px solid rgba(7,59,90,.18)}.tech-category{display:grid;grid-template-columns:180px 1fr;gap:30px;padding:28px 0;border-bottom:1px solid rgba(7,59,90,.18)}.tech-category h3{margin:0;font-size:16px;color:#073B5A}.tech-tools{display:flex;flex-wrap:wrap;gap:25px}.tech-tool{width:76px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:9px}.tech-tool img{width:39px;height:39px;object-fit:contain}.tech-tool span{font-size:10px;font-weight:700;line-height:1.25;color:#3A5E7B}@media(max-width:650px){.tech-category{grid-template-columns:1fr;gap:18px}.tech-tools{gap:18px}.tech-tool{width:68px}}</style>
+  <style>.section-heading>.eyebrow{display:none}</style>
+  <style>.profile-name{margin:0 0 12px;color:#A61B3A;font:700 12px 'DM Mono';letter-spacing:.08em;text-transform:uppercase}.admin-editor:not([hidden]){display:grid;grid-template-columns:145px minmax(0,1fr);column-gap:26px}.admin-editor .editor-heading{grid-column:1/-1}.admin-sidebar{display:flex;flex-direction:column;gap:5px;border-right:1px solid #A3C2D3;padding-right:16px;align-self:start}.admin-sidebar button{border:0;background:transparent;text-align:left;padding:10px 8px;color:#3A5E7B;font:700 11px Manrope;cursor:pointer}.admin-sidebar button.is-active{background:#073B5A;color:#fff}.admin-editor #editorForm{min-width:0}.admin-editor #editorForm [hidden]{display:none}@media(max-width:650px){.admin-editor:not([hidden]){display:block}.admin-sidebar{border-right:0;border-bottom:1px solid #A3C2D3;display:flex;flex-direction:row;overflow:auto;padding:0 0 10px;margin-bottom:18px;white-space:nowrap}.admin-sidebar button{font-size:10px}}</style>
+  <style>.resume-section .side-heading>p:last-child{display:none}</style>
+  <style>.editor-actions{display:flex;justify-content:space-between;align-items:center;margin-top:26px;padding-top:18px;border-top:1px solid #A3C2D3}.editor-actions-right{display:flex;align-items:center;gap:10px}.editor-actions .button-primary{margin:0}.editor-cancel,.editor-close{border:0;background:transparent;color:#3A5E7B;font:700 11px Manrope;cursor:pointer;padding:10px}.editor-cancel{color:#A61B3A}.editor-close{border:1px solid #A3C2D3}</style>
 </head>
 <body>
-  <div class="card">
-    <header class="header">
-      <div class="photo-container" id="photoContainer">
-        <!-- Tu foto se muestra aquí. Reemplaza public/foto.jpg con tu imagen. -->
-        <img src="/foto.jpg" alt="Foto de Soumia Ablam" id="profilePhoto">
-      </div>
-      <h1 class="name">Soumia Ablam</h1>
-      <p class="title">Desarrolladora Web Junior</p>
-    </header>
-
-    <main class="body">
-      <section class="section">
-        <h2>Sobre mí</h2>
-        <p>Hola,Desarrolladora web junior apasionada por crear páginas modernas y funcionales. En continuo aprendizaje y con muchas ganas de crecer profesionalmente.</p>
-      </section>
-
-      <section class="section">
-        <h2>Habilidades</h2>
-        <div class="skills">
-          <span class="skill">HTML</span>
-          <span class="skill">CSS</span>
-          <span class="skill">TypeScript</span>
-          <span class="skill">JavaScript</span>
-          <span class="skill">Responsive Design</span>
-          <span class="skill">Git</span>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2>Foto de perfil</h2>
-        <label class="upload-zone" for="photoInput">
-          📸 Haz clic para subir tu foto del currículum
-          <input type="file" id="photoInput" accept="image/*">
-        </label>
-      </section>
-
-      <div class="links">
-        <a href="https://www.linkedin.com/in/soumia-abdelaati-lamrahi-/" id="linkedinLink" onclick="return false">LinkedIn</a>
-        <a href="https://github.com/soumiaAblam" id="githubLink" onclick="return false">GitHub</a>
-      </div>
-    </main>
-
-    <footer>© 2026 Soumia Ablam</footer>
-  </div>
-
+  <header class="site-header"><a class="brand" href="#inicio" aria-label="Inicio">SA<span>.</span></a><nav aria-label="Navegación principal"><a href="#tecnologias">Tecnologías</a><a href="#curriculum">Currículum</a><a href="#proyectos">Proyectos</a></nav><div class="header-tools"><label class="language-select" for="languageSelector"><span class="sr-only">Idioma</span><select id="languageSelector" aria-label="Seleccionar idioma"><option value="es">ES</option><option value="en">EN</option><option value="fr">FR</option></select></label><a class="header-contact" href="mailto:soumia.abdelaati.lamrahi@gmail.com">Contactar <span>↗</span></a></div></header>
+  <main>
+    <section class="hero" id="inicio"><div class="hero-copy"><p class="eyebrow">Disponible para oportunidades junior · España</p><h1>Construyo experiencias web <em>claras</em> y funcionales.</h1><p class="intro">Soy <strong>Soumia Abdelaati Lamrahi</strong>, recién graduada en Desarrollo de Aplicaciones Web. Me gusta convertir ideas en productos digitales cuidados, accesibles y útiles.</p><div class="hero-actions"><a class="button button-primary" href="#proyectos">Ver proyectos <span>↓</span></a><a class="text-link" href="https://github.com/soumiaAblam" target="_blank" rel="noopener">GitHub <span>↗</span></a></div></div><div class="portrait-wrap"><div class="portrait-decoration decoration-one"></div><div class="portrait-decoration decoration-two"></div><div class="portrait-frame"><img src="/foto.jpg" alt="Retrato de Soumia Abdelaati Lamrahi" id="profilePhoto"><div class="photo-fallback" id="photoFallback" aria-hidden="true">SA</div></div><p class="portrait-caption">Desarrolladora web<br>junior · 2026</p></div></section>
+    <section class="section technologies" id="tecnologias"><div class="section-heading"><p class="eyebrow">01 — Mi caja de herramientas</p><h2>Tecnologías con las que doy vida a la web.</h2></div><div class="tech-grid"><article class="tech-card"><span class="tech-icon html">&lt;/&gt;</span><div><h3>Frontend</h3><p>HTML · CSS · JavaScript · TypeScript · Angular</p></div></article><article class="tech-card"><span class="tech-icon java">J</span><div><h3>Backend</h3><p>Java · PHP · Spring Boot · APIs REST</p></div></article><article class="tech-card"><span class="tech-icon database">⌁</span><div><h3>Datos</h3><p>MySQL Server · Workbench · Bases de datos relacionales</p></div></article><article class="tech-card"><span class="tech-icon git">◇</span><div><h3>Entrega</h3><p>Git · Control de versiones · Despliegue web</p></div></article></div></section>
+    <section class="section resume-section" id="curriculum"><div class="section-heading side-heading"><p class="eyebrow">02 — Trayectoria</p><h2>Mi perfil,<br>en tu idioma.</h2><p>Elige la versión que mejor se adapte a tu proceso de selección.</p></div><div class="resume-list" id="resumeList"><a class="resume-item" href="#" data-cv="es"><span class="resume-language">ES</span><span><strong>Currículum en español</strong><small>Perfil profesional para oportunidades en España</small></span><b>Descargar <i>↗</i></b></a><a class="resume-item" href="#" data-cv="en"><span class="resume-language">EN</span><span><strong>Currículum in English</strong><small>Professional profile for international roles</small></span><b>Download <i>↗</i></b></a><a class="resume-item" href="#" data-cv="fr"><span class="resume-language">FR</span><span><strong>Curriculum en français</strong><small>Profil professionnel pour les postes francophones</small></span><b>Télécharger <i>↗</i></b></a><a class="resume-item" href="#" data-cv="ar"><span class="resume-language">AR</span><span><strong>السيرة الذاتية بالعربية</strong><small>ملف مهني للفرص الناطقة بالعربية</small></span><b>تحميل <i>↗</i></b></a></div></section>
+    <section class="section projects-section" id="proyectos"><div class="section-heading projects-heading"><p class="eyebrow">03 — Trabajo seleccionado</p><h2>Proyectos que hablan por mí.</h2><a class="text-link" href="https://github.com/soumiaAblam" target="_blank" rel="noopener">Ver todo en GitHub <span>↗</span></a></div><div class="projects-grid"><article class="project-card"><p class="project-number">01</p><div class="project-visual visual-code"><span>&lt;app&gt;</span><span>const idea =</span><span class="code-indent">&quot;realidad&quot;;</span></div><div class="project-info"><p class="project-type">Frontend</p><h3>Proyecto destacado</h3><a href="#" data-project="0">Ver repositorio <span>↗</span></a></div></article><article class="project-card"><p class="project-number">02</p><div class="project-visual visual-data"><span class="data-orbit orbit-one"></span><span class="data-orbit orbit-two"></span><span class="data-core">DB</span></div><div class="project-info"><p class="project-type">Full stack</p><h3>Proyecto destacado</h3><a href="#" data-project="1">Ver repositorio <span>↗</span></a></div></article><article class="project-card"><p class="project-number">03</p><div class="project-visual visual-layout"><span></span><span></span><span></span><span></span></div><div class="project-info"><p class="project-type">Web design</p><h3>Proyecto destacado</h3><a href="#" data-project="2">Ver repositorio <span>↗</span></a></div></article></div></section>
+  </main>
+  <footer><p>© <span id="year"></span> Soumia Abdelaati Lamrahi</p><div><a href="mailto:soumia.abdelaati.lamrahi@gmail.com">soumia.abdelaati.lamrahi@gmail.com</a><a href="https://www.linkedin.com/in/soumia-abdelaati-lamrahi-/" target="_blank" rel="noopener">LinkedIn ↗</a></div><button class="admin-trigger" id="adminTrigger" type="button">Acceso privado</button></footer>
+  <dialog class="admin-dialog" id="adminDialog"><div class="admin-login" id="adminLogin"><button class="dialog-close" type="button" data-close aria-label="Cerrar">×</button><p class="eyebrow">Área privada</p><h2>Editar portfolio</h2><p>Introduce las credenciales configuradas para este sitio.</p><form id="loginForm"><label>Correo electrónico<input type="email" id="adminEmail" required></label><label>Contraseña<input type="password" id="adminPassword" required></label><p class="form-error" id="loginError" aria-live="polite"></p><button class="button button-primary" type="submit">Entrar <span>→</span></button></form></div><div class="admin-editor" id="adminEditor" hidden><button class="dialog-close" type="button" data-close aria-label="Cerrar">×</button><div class="editor-heading"><div><p class="eyebrow">Área privada</p><h2>Actualizar contenido</h2></div><button class="logout" id="logoutButton" type="button">Cerrar sesión</button></div><form id="editorForm"><label class="file-field">Foto de perfil<input type="file" id="photoInput" accept="image/*"><span>Elegir imagen</span><small id="selectedPhoto">Se guarda solo en este navegador.</small></label><fieldset><legend>Currículums</legend><label>CV español (PDF)<input type="file" data-resume="es" accept="application/pdf"></label><label>CV inglés (PDF)<input type="file" data-resume="en" accept="application/pdf"></label><label>CV francés (PDF)<input type="file" data-resume="fr" accept="application/pdf"></label><label>CV árabe (PDF)<input type="file" data-resume="ar" accept="application/pdf"></label></fieldset><fieldset><legend>Proyectos estrella</legend><label>Proyecto 1 — título<input type="text" data-project-title="0"></label><label>Proyecto 1 — enlace GitHub<input type="url" data-project-url="0" placeholder="https://github.com/..."></label><label>Proyecto 2 — título<input type="text" data-project-title="1"></label><label>Proyecto 2 — enlace GitHub<input type="url" data-project-url="1" placeholder="https://github.com/..."></label><label>Proyecto 3 — título<input type="text" data-project-title="2"></label><label>Proyecto 3 — enlace GitHub<input type="url" data-project-url="2" placeholder="https://github.com/..."></label></fieldset><p class="save-note" id="saveNote" aria-live="polite"></p><button class="button button-primary" type="submit">Guardar cambios <span>→</span></button></form></div></dialog>
   <script src="/script.js"></script>
-</body>
-</html>
+</body></html>

@@ -1,48 +1,29 @@
-# Currículum — Soumia Ablam
+# Portfolio de Soumia Abdelaati Lamrahi
 
-Página web tipo currículum para **Soumia Ablam — Desarrolladora Web Junior**.
-Desplegada en Cloudflare Workers con assets estáticos (HTML + CSS + TypeScript).
+Portfolio profesional para una desarrolladora web junior, desplegable en Cloudflare Workers.
 
-## 📁 Estructura
-
-```
-cv-soumia/
-├── src/
-│   └── index.ts          # Worker que sirve los archivos estáticos
-├── public/
-│   ├── index.html        # Página del currículum
-│   ├── styles.css        # Estilos
-│   ├── script.js         # Lógica para subir foto (navegador)
-│   └── foto.jpg          # ← REEMPLAZA con tu foto
-├── wrangler.toml         # Configuración de Cloudflare Workers
-├── package.json
-└── tsconfig.json
-```
-
-## 🚀 Cómo desplegar
+## Desarrollo y despliegue
 
 ```bash
-# 1. Instalar dependencias
 npm install
-
-# 2. Probar localmente
 npm run dev
-
-# 3. Desplegar a Cloudflare Workers
 npm run deploy
 ```
 
-Tu página quedará en: `mywebpage.soumia-abdelaati-lamrahi.workers.dev`
+## Imagen y currículums
 
-## 📸 Subir tu foto
+- Para mostrar una foto desde el primer momento, añade `public/foto.jpg` y vuelve a desplegar.
+- El área de edición está en el punto discreto situado al centro, bajo el pie de página. Desde ahí se pueden cargar una foto, cuatro CV en PDF y los enlaces de tres proyectos.
+- En modo local, `npm run dev` inicia un servidor de demostración que guarda los cambios en `data/content.json`. Las fotos, PDFs y datos permanecen al recargar o reiniciar el servidor local.
+- El servidor local está pensado solo para la demostración en tu ordenador. Para publicar y conservar estos cambios en Internet habría que conectar almacenamiento persistente (R2/D1).
 
-1. Reemplaza `public/foto.jpg` con tu foto (mismo nombre)
-2. O usa el botón "📸 Haz clic para subir tu foto" en la página (solo visible en el navegador, no se guarda en el servidor)
-3. Vuelve a desplegar con `npm run deploy`
+## Acceso de administración
 
-## ✏️ Personalizar
+El correo y la contraseña no se incluyen en el código público. Antes de desplegar, configura los secretos en Cloudflare:
 
-- **Texto**: edita `public/index.html`
-- **Colores**: edita `public/styles.css`
-- **Links**: cambia los `href` de LinkedIn y GitHub en `index.html`
-- **Sin correo electrónico**: a propósito, no se incluye ningún email en la página
+```bash
+npx wrangler secret put ADMIN_EMAIL
+npx wrangler secret put ADMIN_PASSWORD
+```
+
+El Worker verifica esas dos variables en `POST /api/login`. No guardes contraseñas en `public/script.js` ni en el repositorio.
